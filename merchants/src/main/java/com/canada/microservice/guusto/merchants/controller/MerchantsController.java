@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.canada.microservice.guusto.merchants.model.Merchants;
 import com.canada.microservice.guusto.merchants.service.MerchantsService;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 @RestController
 public class MerchantsController {
@@ -22,14 +21,9 @@ public class MerchantsController {
 		return merchantsService.getMerchants();	
 	}
 	
-	@HystrixCommand(fallbackMethod="backupMethod")
 	@GetMapping("/merchants/{id}")
 	public Merchants getMerchantById(@PathVariable Long id) {
 		return merchantsService.getMerchantById(id);
-	}
-	
-	public Merchants backupMethod() {
-		return new Merchants();
 	}
 
 }
