@@ -23,8 +23,7 @@ public class Merchants implements Serializable {
 	private Long id;
 	private String merchant;
 	
-	@Column(name = "merchant_type")
-	private String merchantType;
+	private String type;
 	private String website;
 	private String region;
 	
@@ -40,11 +39,11 @@ public class Merchants implements Serializable {
 	public void setMerchant(String merchant) {
 		this.merchant = merchant;
 	}
-	public String getMerchantType() {
-		return merchantType;
+	public String getType() {
+		return type;
 	}
-	public void setMerchantType(String merchantType) {
-		this.merchantType = merchantType;
+	public void setType(String type) {
+		this.type = type;
 	}
 	public String getWebsite() {
 		return website;
