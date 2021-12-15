@@ -14,6 +14,8 @@ Even when this didnt go as I expected, it was a great chance to put what I'm lea
 Thanks a lot.
 Regards
 
+You can download the readme to have this with a more confortable format.
+
 Here is an update with some info about the code itself.
 
 As I didnt make it to the point of make the Dockers for deployment 
