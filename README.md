@@ -49,21 +49,26 @@ This because the clients need to be registered to talk to the services
 Collect the access_token from the response.
 This token  need to be added as a bearer token on the next requests
 
+
 Merchants :
 List all the merchants on the DB 
 GET : localhost:8090/api/merchant/merchants  
 
+
 Gets one of the merchants
 GET : localhost:8090/api/merchant/merchants/{merchantId}
+
 
 
 Users : 
 Gets one user by username
 GET : localhost:8090/api/user/user/{username}
 
+
 Accounts : 
 Get one account based on the Id
 GET : localhost:8090/api/account/account/{accountid}
+
 
 updates an account 
 PUT : localhost:8090/api/account/account
