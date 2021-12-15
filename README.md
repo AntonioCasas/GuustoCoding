@@ -11,5 +11,5 @@ I already passed the time limit that I had to complete this and still have lots 
 
 Even when this didnt go as I expected, it was a great chance to put what I'm learning in practice.
 
-Thanks a lot
+Thanks a lot.
 Regards
